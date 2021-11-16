@@ -1,0 +1,32 @@
+﻿@model OnlineShopping.Models.accdet
+
+@{
+    ViewBag.Title = "ThankYouPage";
+}
+
+<h2>Thank you for shopping with us and your order will be delivered to the below address: </h2>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>PhoneNumber</th>
+        <th>AlternatePhoneNumber</th>
+        <th>PinCode</th>
+        <th>City</th>
+
+    </tr>
+
+    <tr>
+        <td>@Model.Name</td>
+        <td>@Model.Address</td>
+        <td>@Model.PhoneNumber</td>
+        <td>@Model.AlternatePhoneNumber</td>
+        <td>@Model.PinCode</td>
+        <td>@Model.City</td>
+    </tr>
+</table>
+<p>
+    @*@Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |*@
+    @Html.ActionLink("Back to Home", "Index","Home")
+</p>
